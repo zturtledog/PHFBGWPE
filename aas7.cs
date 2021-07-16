@@ -13,7 +13,7 @@ public class aas7 : MonoBehaviour
     public float curSpeedX = 0;
     public float curSpeedY = 0;
     public float gravity = 20.0f;
-    public float health = 27;
+    public float health = 24;
     public float rotationX = 0;
 
     public CharacterController characterController;
