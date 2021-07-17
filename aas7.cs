@@ -45,31 +45,6 @@ public class aas7 : MonoBehaviour
         bool isRunning = (Input.GetKey(KeyCode.LeftControl));
         bool isShifting = IntToBool((int)((BoolToInt(Input.GetKey(KeyCode.LeftAlt)))*BoolToInt(!isShiftable))+(BoolToInt(Input.GetKey(KeyCode.LeftShift))*BoolToInt(isShiftable)));
 
-        RaycastHit hit;
-        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-        if (Physics.Raycast(ray, out hit))
-        {
-            if (hit.transform.gameObject.tag == "TURRET" && Input.GetMouseButtonDown(1))
-            {
-                turret_behaveyor TScript = hit.transform.gameObject.GetComponent<turret_behaveyor>();
-                if (TScript.active == true)
-                {
-                    if (characterController.isGrounded) 
-                    {
-                        TScript.health --;
-                    }else
-                    {
-                        TScript.health -= (int)(Random.Range(0.0f, 5.0f)+Random.Range(0.0f, 3.0f)*BoolToInt(isRunning));
-                    }
-                    if (TScript.sleeping == !false)
-                    {
-                        TScript.sleeping = !true;
-                    }
-                }
-            }
-        }
-
         RaycastHit hit1;
         var ray1 = Camera.main.ScreenPointToRay(Input.mousePosition);
 
