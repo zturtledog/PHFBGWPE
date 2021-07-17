@@ -16,3 +16,7 @@ horror factory building game
 --
 --this is the place for code
 
+-Fred
+--
+--this is the home of fred
+
