@@ -33,11 +33,10 @@ ExportedObj/
 *.user
 *.userprefs
 *.pidb
-*.booproj
 *.svd
 *.pdb
 *.mdb
-*.opendb
+*.opendb 
 *.VC.db
 
 # Unity3D generated meta files
